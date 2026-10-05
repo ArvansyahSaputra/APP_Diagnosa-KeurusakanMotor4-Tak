@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/dao/KerusakanDAO.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/model/Gejala.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/FormRegistrasi.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/model/Akun.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelRiwayatDiagnosa.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/Koneksi.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/FormLogin.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelDataGejala.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelRuleBase.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelLaporan.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/dao/RiwayatDAO.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/model/Rule.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/ShellAdmin.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/Main.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/ShellUser.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/dao/AkunDAO.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/ui/UiKit.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/ui/RoundedButtonUI.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/dao/RuleDAO.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelDiagnosa.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/ui/RoundedBorder.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelHasilDiagnosa.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/dao/GejalaDAO.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/model/RiwayatDiagnosa.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/view/PanelRiwayatSaya.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/util/CFEngine.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/util/CetakLaporan.java</file>
+            <file>file:/D:/Arfansyah%20Saputra/cobacoba/src/com/haryono/sistempakar/model/Kerusakan.java</file>
+        </group>
+    </open-files>
+</project-private>

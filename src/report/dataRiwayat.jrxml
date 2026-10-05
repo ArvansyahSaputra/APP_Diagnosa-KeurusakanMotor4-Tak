@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72fb8cb3-46ea-43fb-b85b-af2db51e8ed3">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="214"/>
+	<queryString>
+		<![CDATA[SELECT
+     riwayat_diagnosa.`id_riwayat` AS riwayat_diagnosa_id_riwayat,
+     riwayat_diagnosa.`tanggal` AS riwayat_diagnosa_tanggal,
+     riwayat_diagnosa.`id_akun` AS riwayat_diagnosa_id_akun,
+     riwayat_diagnosa.`jenis_kendaraan` AS riwayat_diagnosa_jenis_kendaraan,
+     riwayat_diagnosa.`gejala_dipilih` AS riwayat_diagnosa_gejala_dipilih,
+     riwayat_diagnosa.`kode_kerusakan_hasil` AS riwayat_diagnosa_kode_kerusakan_hasil,
+     riwayat_diagnosa.`nama_kerusakan_hasil` AS riwayat_diagnosa_nama_kerusakan_hasil,
+     riwayat_diagnosa.`cf_akhir` AS riwayat_diagnosa_cf_akhir
+FROM
+     `riwayat_diagnosa` riwayat_diagnosa]]>
+	</queryString>
+	<field name="riwayat_diagnosa_id_riwayat" class="java.lang.Integer"/>
+	<field name="riwayat_diagnosa_tanggal" class="java.sql.Timestamp"/>
+	<field name="riwayat_diagnosa_id_akun" class="java.lang.Integer"/>
+	<field name="riwayat_diagnosa_jenis_kendaraan" class="java.lang.String"/>
+	<field name="riwayat_diagnosa_gejala_dipilih" class="java.lang.String"/>
+	<field name="riwayat_diagnosa_kode_kerusakan_hasil" class="java.lang.String"/>
+	<field name="riwayat_diagnosa_nama_kerusakan_hasil" class="java.lang.String"/>
+	<field name="riwayat_diagnosa_cf_akhir" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="167" y="32" width="338" height="20" uuid="4f110249-4f5e-4b4b-a7e1-6d82b822d6d8"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[JL.H.Dimun Raya, Kel.Sukamaju, Kec.Cilodong, Kota Depok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="1" width="324" height="31" uuid="8a0d5576-b617-4858-8d54-a40e25dd79f8"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bengkel Motor Haryono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="52" width="66" height="20" uuid="8e9a5412-853f-4496-8757-e03bfe2de680"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[Jawa Barat]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="82" width="555" height="1" uuid="48e8c642-c704-4b12-9d45-4a8be413fcca"/>
+			</line>
+			<image>
+				<reportElement x="10" y="1" width="139" height="79" uuid="eb23c00d-f84d-45a0-a576-c9f6e8b0f3a5"/>
+				<imageExpression><![CDATA["D:\\Arfansyah Saputra\\AppDesktopHaryono\\src\\img\\background-.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="126" y="8" width="293" height="29" uuid="1020ecf2-4424-4be9-9309-cb6bef643a49"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Riwayat Diagnosa]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="56" width="257" height="20" uuid="6debc736-305a-4930-afc8-62654030bbdf"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dicetak: " + new java.text.SimpleDateFormat("dd MMMM yyyy, HH:mm 'WIB'", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="37" width="515" height="20" uuid="ea5b0d2a-4780-46d1-bc1d-ec014b226b54"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sistem Pakar Diagnosa Kerusakan Sepeda Motor 4-Tak - Forward Chaining & Certainty Factor]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="0" width="55" height="20" uuid="7fb4cc7e-7dc7-469c-9eaf-a214dbe072af"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Riwayat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="0" width="197" height="20" uuid="50148436-e10a-4ab9-98e4-f52a27de06ad"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Gejala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="0" width="68" height="20" uuid="4366207c-3ebc-4da9-a4ee-a3c799b93a79"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kerusakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="0" width="54" height="20" uuid="cdbe2711-31f1-40c7-a07d-0ed1f88298c6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Keyakinan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="0" width="79" height="20" uuid="006798d9-840a-48d5-8d0e-3d2bb7b017f9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="0" width="82" height="20" uuid="dc13c304-eabd-489b-9f44-29aa9a4ef4ed"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jenis Kendaraan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="0" width="55" height="20" uuid="e86fdcc8-d110-46f6-9ca2-fabae6031362"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{riwayat_diagnosa_id_riwayat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="0" width="79" height="20" uuid="f48bae8b-f7ac-4cf2-972e-99ff5437765e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{riwayat_diagnosa_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="0" width="82" height="20" uuid="2a76a9d6-e264-4721-bb9a-48240e1cf288"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{riwayat_diagnosa_jenis_kendaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="197" height="20" uuid="5ca46753-4fb5-4a18-b133-3b3ea71d65b7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{riwayat_diagnosa_gejala_dipilih}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="68" height="20" uuid="ff6186e2-dfcf-4f09-9f87-14ed085313b4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{riwayat_diagnosa_nama_kerusakan_hasil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="0" width="54" height="20" uuid="4d24450b-05a5-42d6-8ce6-ebd468291dcd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#0.00").format($F{riwayat_diagnosa_cf_akhir}.doubleValue() * 100) + " %"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="28" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="112" splitType="Stretch">
+			<staticText>
+				<reportElement x="404" y="26" width="72" height="20" uuid="11bf2738-3904-4fa9-a7ca-2fa93cc51ea2"/>
+				<text><![CDATA[Pemilik Bengkel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="84" width="45" height="20" uuid="ba5ba323-c1c8-4b87-8617-76c0610f649c"/>
+				<text><![CDATA[Haryono]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="363" y="6" width="191" height="20" uuid="5194effd-f276-4717-bb94-8e70e215a78e"/>
+				<textFieldExpression><![CDATA["Depok, " + new java.text.SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="39" splitType="Stretch"/>
+	</summary>
+</jasperReport>

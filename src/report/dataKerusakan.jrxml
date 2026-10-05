@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6e4a7c5e-d4a5-477e-b4c2-3a1dc8b9aee0">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="118"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     kerusakan.`id_kerusakan` AS kerusakan_id_kerusakan,
+     kerusakan.`kode_kerusakan` AS kerusakan_kode_kerusakan,
+     kerusakan.`nama_kerusakan` AS kerusakan_nama_kerusakan,
+     kerusakan.`solusi` AS kerusakan_solusi,
+     kerusakan.`jenis_kendaraan` AS kerusakan_jenis_kendaraan
+FROM
+     `kerusakan` kerusakan]]>
+	</queryString>
+	<field name="kerusakan_id_kerusakan" class="java.lang.Integer"/>
+	<field name="kerusakan_kode_kerusakan" class="java.lang.String"/>
+	<field name="kerusakan_nama_kerusakan" class="java.lang.String"/>
+	<field name="kerusakan_solusi" class="java.lang.String"/>
+	<field name="kerusakan_jenis_kendaraan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="167" y="32" width="338" height="20" uuid="d3488b3f-beb0-4048-870d-16d63d0c76c1"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[JL.H.Dimun Raya, Kel.Sukamaju, Kec.Cilodong, Kota Depok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="1" width="324" height="31" uuid="310eec59-8d68-4efd-85a9-e602cbbe2a95"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bengkel Motor Haryono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="52" width="66" height="20" uuid="62e3b34f-5b6e-4dd7-9e55-bbb219929d79"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[Jawa Barat]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="80" width="555" height="1" uuid="b89e9146-3bb8-429e-af50-46df9467296e"/>
+			</line>
+			<image>
+				<reportElement x="10" y="1" width="139" height="79" uuid="77cccc78-d503-40e7-9e7c-d92b33eab2a0"/>
+				<imageExpression><![CDATA["D:\\Arfansyah Saputra\\AppDesktopHaryono\\src\\img\\background-.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement x="165" y="6" width="224" height="29" uuid="b8f92b3c-c030-4a84-b6db-246f818d6685"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Kerusakan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="54" width="257" height="20" uuid="3cd99189-aac9-4f0f-9272-8f7ca22b4956"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dicetak: " + new java.text.SimpleDateFormat("dd MMMM yyyy, HH:mm 'WIB'", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="35" width="515" height="20" uuid="c8406f0e-3125-442b-b0bf-ad56a1f608bb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sistem Pakar Diagnosa Kerusakan Sepeda Motor 4-Tak - Forward Chaining & Certainty Factor]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="0" width="63" height="20" uuid="e7865971-c9f1-4f07-b636-35e918de323b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID Kerusakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="0" width="74" height="20" uuid="a838e029-4cd4-47bd-9d3b-383807e39c70"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Kerusakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="0" width="122" height="20" uuid="02090ded-ab5b-4c27-9b96-62973a7b05f0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Kerusakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="0" width="153" height="20" uuid="938ef63b-cb53-4f0b-9431-0c65549f83e7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Solusi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="446" y="0" width="76" height="20" uuid="ed149ade-a438-4032-acdf-ba0524dbce4b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jenis Kendaraan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="34" y="0" width="63" height="20" uuid="c40243cb-5844-42b4-9177-973f4d8f5e61"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kerusakan_id_kerusakan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="0" width="74" height="20" uuid="946e73c0-13bc-4b80-9011-1cc22ce6c532"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kerusakan_kode_kerusakan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="0" width="122" height="20" uuid="1e43f176-beb7-4ae4-a767-b4c02184e080"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kerusakan_nama_kerusakan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="0" width="153" height="20" uuid="e7d7ef6a-6e48-4276-a89b-ad70f3aae6cb"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kerusakan_solusi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="0" width="76" height="20" uuid="ffb195bf-f282-40cd-a33b-dd8570bdbf18"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kerusakan_jenis_kendaraan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="23" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="404" y="25" width="72" height="20" uuid="6764bcb2-2bdf-4800-a980-4dc41f819d4a"/>
+				<text><![CDATA[Pemilik Bengkel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="83" width="45" height="20" uuid="4aeb9018-d75e-43c3-95f7-79b2ca5ee139"/>
+				<text><![CDATA[Haryono]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="363" y="5" width="191" height="20" uuid="ada9184a-04b8-4104-866a-4ee2692f1073"/>
+				<textFieldExpression><![CDATA["Depok, " + new java.text.SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="119" splitType="Stretch"/>
+	</summary>
+</jasperReport>
